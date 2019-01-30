@@ -7,6 +7,12 @@ class PigLatinizer
       if word.upcase.start_with?('A','E','I','O','U')
         word << 'way'
       else 
+        cons = word.split(/[aeiou]/).first
+        word.sub!(cons, '')
+        word << cons + 'ay'
+      end
+    end
+    
     
   
 end
