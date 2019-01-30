@@ -12,7 +12,6 @@ class PigLatinizer
         word << cons + 'ay'
       end
     end
-    
-    
-  
+    @string.join(" ")
+  end
 end
