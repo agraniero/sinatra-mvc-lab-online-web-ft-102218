@@ -1,6 +1,6 @@
 class PigLatinizer
   
-  def initialize(string)
-    @string =
+  def piglatinize(string)
+    @string = string.split(" ")
   
 end
